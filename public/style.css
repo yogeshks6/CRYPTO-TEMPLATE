@@ -48,9 +48,11 @@ body {
 }
 .second-cont {
   background-color: #1f3337;
+ 
+}
+.second-cont-left{
   display: flex;
-  justify-content: center;
-  gap: 667px;
+  align-items: center;
 }
 .second-cont-left a {
   text-decoration: none;
@@ -58,13 +60,32 @@ body {
   border-radius: 100px;
   padding: 6px 20px;
 }
-.second-cont-left ul {
-  gap: 20px;
+.img-ico img{
+  height: 39px;
+background-color: #294143;
+border-radius: 5px;
+padding: 10px;
 }
-.second-cont-left-li {
-  list-style-type: none;
+.col-sm-7 p{
+  padding-top: 80px;
 }
-.second-cont-right {
-  gap: 50px;
-  display: flex;
+.col-sm-7{
+  flex: 0 0 auto;
+        width: 39%;
+}
+.col-sm-7 h5{
+  width: 416px;
+}
+.col-sm-3{
+  background-color: rgba(128, 128, 128, 0.218);
+  border-radius: 10px;
+}
+.col-sm-3-card{
+  padding: 10px;
+}
+.line-1 a{
+text-decoration: none;
+color: black;
+background-color: #00B483;
+padding: 8px 36px;
 }
