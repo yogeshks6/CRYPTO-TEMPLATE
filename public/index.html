@@ -14,10 +14,88 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <title>CRYPTO-TEMPLATE</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="main"></div>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto nav-btn-row">
+            <li class="nav-item">
+              <a class="nav-link"
+                >Buy Crypto <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Markets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                >Trade <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                >Derivatives <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                >Earn <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                >More <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+          </ul>
+          <form class="d-flex nav-form">
+            <input
+              class="form-control me-2 border-none rounded-pill nav-search"
+              type="text"
+              placeholder="Search"
+            />
+            <a class="navbar-brand logo"
+              ><img src="../assets/logo.png" alt=""
+            /></a>
+            <i class="fa-regular fa-bell nav-bell-icon"></i>
+          </form>
+        </div>
+        <a class="btn btn-primary nav-btn" type="button">Add funds</a>
+      </div>
+    </nav>
+
+    <div class="container-fluid second-cont">
+      <div class="second-cont-left d-flex">
+        <a href="" class="text-light">Fast Trade</a>
+        <ul class="d-flex">
+          <li class="second-cont-left-li text-light">P2P</li>
+          <li class="second-cont-left-li text-light">Recurring Buy</li>
+          <li class="second-cont-left-li text-light">KuCard</li>
+        </ul>
+      </div>
+      <div class="second-cont-right text-light">
+        <p>My Orders</p>
+        <p>Payment Method</p>
+      </div>
+    </div>
   </body>
 </html>
