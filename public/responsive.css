@@ -43,5 +43,21 @@
   .col-sm-3 {
     margin-top: 66px;
   }
-
+  .fourth-cont {
+    flex-direction: column;
+    width: 100%;
+}
+  .left-fourth-cont img {
+    width: 384px;
+  }
+  .right-fourth-cont div{
+    width: 96%;
+  }
+  .right-fourth-cont p{
+    color: #D2D2D2;
+  }
+  .right-fourth-cont {
+    width: 400px;
+}
+  
 }

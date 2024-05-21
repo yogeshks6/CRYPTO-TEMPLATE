@@ -115,15 +115,34 @@ body {
   padding-right: 4px;
   height: 25px;
 }
-.line-box-btn{
+.line-box-btn {
   background-color: #00b483;
-   border: none;
-   border-radius: 10px;
-   height: 53px;
-
+  border: none;
+  border-radius: 10px;
+  height: 53px;
 }
 
-.third-cont .row{
- display: flex;  
- justify-content: center;
+.third-cont .row {
+  display: flex;
+  justify-content: center;
+}
+.fourth-cont{
+  display: flex;
+  margin-top: 7%;
+  width: 73%;
+}
+.left-fourth-cont img{
+  width: 586px;
+}
+.right-fourth-cont{
+  width: 471px;
+}
+.right-fourth-cont div{
+  margin-left: 10px;
+  border-left: 1px solid #00b483;
+  padding-left: 10px;
+  width: 103%;
+}
+.right-fourth-cont p{
+  color: #D2D2D2;
 }
