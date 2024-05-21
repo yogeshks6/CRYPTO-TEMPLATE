@@ -78,4 +78,13 @@
   .fifth-lower-left-first {
     width: 144%;
   }
+  .sixth-cont {
+    margin-top: 25%;
+  }
+  .sixth-cont p {
+    font-size: 13px;
+  }
+  .sixth-cont img {
+    width: 80%;
+  }
 }
