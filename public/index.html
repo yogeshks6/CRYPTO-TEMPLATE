@@ -14,6 +14,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -99,10 +100,11 @@
         <p>Payment Method</p>
       </div>
     </div>
-    <div class="container mt-5">
-      <div class="row d-flex justify-content-center">
+
+    <div class="container mt-5 third-cont">
+      <div class="row">
         <div class="col-sm-7">
-          <h2 class="text-light w-50">
+          <h2 class="text-light w-75 fs-1">
             Get Crypto now Instant purchase available
           </h2>
           <h5 style="color: #d2d2d2">
@@ -131,10 +133,18 @@
               </div>
               <div class="line-box">
                 <p class="mt-3">Limit: 10 - 5000</p>
-                <p class="mt-3">
-                  <img src="../assets/Us Dollar Circled.png" alt="" />USD
-                  <i class="fa-solid fa-chevron-down"></i>
-                </p>
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle text-light"
+                    data-bs-toggle="dropdown"
+                    ><img src="../assets/Us Dollar Circled.png" alt="" />USD</a
+                  >
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Another action</a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -144,30 +154,46 @@
               </div>
               <div class="line-box">
                 <p class="mt-3">Limit: 9.52 - 4,761.9</p>
-                <p class="mt-3">
-                  <img src="../assets/Us Dollar Circled (1).png" alt="" />USDT
-                  <i class="fa-solid fa-chevron-down"></i>
-                </p>
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle text-light"
+                    data-bs-toggle="dropdown"
+                    ><img
+                      src="../assets/Us Dollar Circled (1).png"
+                      alt=""
+                    />USDT</a
+                  >
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Another action</a>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="Boxes">
               <div class="line">
-                <p>I want to spent</p>
+                <p>Pay with</p>
               </div>
               <div class="line-box">
-                <p class="mt-3">Limit: 10 - 5000</p>
-                <p class="mt-3">
-                  <img src="../assets/Us Dollar Circled.png" alt="" />USD
-                  <i class="fa-solid fa-chevron-down"></i>
-                </p>
+                <p class="mt-3">Visa/Master Card</p>
+                <i class="fa-solid fa-chevron-down"></i>
               </div>
             </div>
 
-
+            <div class="Boxes">
+              <div class="line d-flex justify-content-between">
+                <p>Reference Price</p>
+                <p>1 USDT = 1.5 USD</p>
+              </div>
+              <button class="line-box-btn w-100">Buy USDT</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </body>
 </html>

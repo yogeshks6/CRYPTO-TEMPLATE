@@ -69,6 +69,7 @@ body {
   padding-top: 80px;
 }
 .col-sm-7 {
+  margin-top: 25px;
   flex: 0 0 auto;
   width: 39%;
 }
@@ -88,10 +89,10 @@ body {
   background-color: #00b483;
   padding: 8px 36px;
 }
-.line p{
-margin: 15px 0px 3px 0px;
-color: #d2d2d2;
-font-size: 12px;
+.line p {
+  margin: 15px 0px 3px 0px;
+  color: #d2d2d2;
+  font-size: 12px;
 }
 .line-box {
   border: 1px solid #d2d2d2;
@@ -100,10 +101,29 @@ font-size: 12px;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  gap: 73px;
-  height: 60px;
-  padding: 17px;
+  justify-content: space-between;
+  height: 53px;
+  padding: 10px;
 }
-.line-box img{
-  font-size: 10px;
+.dropdown {
+  cursor: pointer;
+}
+.dropdown-toggle {
+  text-decoration: none;
+}
+.dropdown-toggle img {
+  padding-right: 4px;
+  height: 25px;
+}
+.line-box-btn{
+  background-color: #00b483;
+   border: none;
+   border-radius: 10px;
+   height: 53px;
+
+}
+
+.third-cont .row{
+ display: flex;  
+ justify-content: center;
 }
