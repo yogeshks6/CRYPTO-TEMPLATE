@@ -46,18 +46,36 @@
   .fourth-cont {
     flex-direction: column;
     width: 100%;
-}
+    margin-top: 20%;
+  }
   .left-fourth-cont img {
     width: 384px;
   }
-  .right-fourth-cont div{
+  .right-fourth-cont div {
     width: 96%;
   }
-  .right-fourth-cont p{
-    color: #D2D2D2;
+  .right-fourth-cont p {
+    color: #d2d2d2;
   }
   .right-fourth-cont {
     width: 400px;
-}
-  
+  }
+  .fifth-cont {
+    margin-top: 30%;
+    width: 100%;
+  }
+  .fifth-upper-section h1 {
+    width: 50%;
+  }
+  .fifth-lower-section {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+  }
+  .fifth-upper-section h1 {
+    width: 79%;
+  }
+  .fifth-lower-left-first {
+    width: 144%;
+  }
 }
