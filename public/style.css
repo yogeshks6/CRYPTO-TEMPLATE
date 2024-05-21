@@ -146,3 +146,41 @@ body {
 .right-fourth-cont p{
   color: #D2D2D2;
 }
+.fifth-cont{
+  display: flex;
+  flex-direction: column;
+  width: 602px;
+  margin-top: 10%;
+}
+.fifth-lower-left{
+  border-left: 1px solid #00b483;
+  width: 40%;
+  height: 10%;
+  padding-left: 10px;
+}
+.fifth-lower-left-first {
+  padding-bottom: 20px;
+}
+.fifth-lower-left-first img{
+  width: 12%;
+}
+.fifth-lower-left-first h6{
+  padding: 12px 0px 6px 0px;
+  color: white;
+  font-size: 15px;
+}
+.fifth-lower-left-first p{
+  color: #D2D2D2;
+  font-size: 10px;
+}
+.fifth-lower-section{
+  display: flex;
+  gap: 100px;
+  margin-top: 30px;
+}
+.fifth-lower-right{
+  border-left: 1px solid #00b483;
+  width: 40%;
+  padding-left: 10px;
+  margin-top: 70px;
+}
