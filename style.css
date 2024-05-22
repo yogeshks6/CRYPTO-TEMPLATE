@@ -11,3 +11,12 @@
   border: none;
   background-image: linear-gradient(#008edd, #004ea9);
 }
+.hero-icon img {
+    width: 100%;
+}
+.hero-icon {
+    width: 68px;
+    background-color: #2b3138;
+    padding: 5px 10px;
+    margin: 2px;
+}
