@@ -1,13 +1,13 @@
-.search-bar{
-    background-color: #1D3536;
-    height: 40px;
+.search-bar {
+  background-color: #1d3536;
+  height: 40px;
 }
-.nav-logo{
-    width: 35px;
+.nav-logo {
+  width: 35px;
 }
-.nav-btn{
- font-size: 12px;
- width: 40%;
- border: none;
- background-image: linear-gradient(#008EDD,#004EA9);
+.nav-btn {
+  font-size: 12px;
+  width: 42%;
+  border: none;
+  background-image: linear-gradient(#008edd, #004ea9);
 }
