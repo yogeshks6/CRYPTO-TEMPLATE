@@ -4,15 +4,16 @@ body{
   font-family: "DM Sans", sans-serif;
 }
 .search-bar {
-  background-color: #1d3536;
-  height: 40px;
+  background-color: #1d3536
 }
 .nav-logo {
   width: 35px;
 }
 .nav-btn {
   font-size: 12px;
-  width: 42%;
+  margin-left: 10px;
+  width: 150px;
+  height:46px;
   border: none;
   background-image: linear-gradient(#008edd, #004ea9);
 }
