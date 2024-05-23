@@ -20,3 +20,10 @@
     padding: 5px 10px;
     margin: 2px;
 }
+.second-sec-card{
+    border: 2px solid red;
+}
+.small-boxes{
+  border: 1px solid red;
+  border-radius: 10px;
+}
