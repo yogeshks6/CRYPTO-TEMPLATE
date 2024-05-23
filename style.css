@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body{
+  font-family: "DM Sans", sans-serif;
+}
 .search-bar {
   background-color: #1d3536;
   height: 40px;
@@ -20,10 +25,8 @@
     padding: 5px 10px;
     margin: 2px;
 }
-.second-sec-card{
-    border: 2px solid red;
-}
+
 .small-boxes{
-  border: 1px solid red;
+  border: 1px solid rgb(120, 118, 118);
   border-radius: 10px;
 }
