@@ -57,3 +57,29 @@ body {
 .global-sec-upper-left {
   margin-top: 10%;
 }
+
+.global-sec-lower-box {
+  margin-top: 20px;
+  height: 100%;
+  border-left: 1px solid green;
+  padding-left: 15px;
+}
+.global-sec-lower-box img {
+  margin-top: 40%;
+}
+.global-sec-lower-box p {
+  font-size: 20px;
+}
+.global-sec-lower-box span {
+  color: #d2d2d2;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 576px) {
+  .global-sec-lower-box {
+    margin-left: 10px;
+  }
+  .global-sec-lower-box img {
+    margin-top: 20%;
+  }
+}
