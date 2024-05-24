@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-body{
+body {
   font-family: "DM Sans", sans-serif;
 }
 .search-bar {
-  background-color: #1d3536
+  background-color: #1d3536;
 }
 .nav-logo {
   width: 35px;
@@ -13,36 +13,47 @@ body{
   font-size: 12px;
   margin-left: 10px;
   width: 150px;
-  height:46px;
+  height: 46px;
   border: none;
   background-image: linear-gradient(#008edd, #004ea9);
 }
 .hero-icon img {
-    width: 100%;
+  width: 100%;
 }
 .hero-icon {
-    width: 68px;
-    background-color: #2b3138;
-    padding: 5px 10px;
-    margin: 2px;
+  width: 68px;
+  background-color: #2b3138;
+  padding: 5px 10px;
+  margin: 2px;
 }
 
-.small-boxes{
+.small-boxes {
   border: 1px solid rgb(120, 118, 118);
   border-radius: 10px;
 }
-.card-body .nav .nav-item .active{
-  background-color: #00B483;
+.card-body .nav .nav-item .active {
+  background-color: #00b483;
 }
-.premier-sec{
+.premier-sec {
   margin-top: 70px;
   margin-left: 20%;
 }
 
-.img-section{
+.img-section {
   margin-top: 6%;
 }
 
-.global-sec-btn{
- border: 1px solid #00B483;
+.global-sec-btn {
+  border: 1px solid #00b483;
+  border-bottom: none;
+  text-decoration: none;
+  padding: 15px 30px 15px 30px;
+}
+.global-sec-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+.global-sec-upper-left {
+  margin-top: 10%;
 }
