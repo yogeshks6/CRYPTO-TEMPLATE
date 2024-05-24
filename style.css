@@ -107,6 +107,18 @@ body {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="%23ffffff" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>');
 }
 
+.footer-section{
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-top: 11%;
+}
+.footer-icons i{
+  background-color: #00B483;
+  font-size: 20px;
+  padding: 17px 20px;
+  color: black;
+}
+
+
 @media only screen and (max-width: 576px) {
   .global-sec-lower-box {
     margin-left: 10px;
@@ -114,4 +126,5 @@ body {
   .global-sec-lower-box img {
     margin-top: 20%;
   }
+
 }

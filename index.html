@@ -1,433 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body style="background-image: url(./assets/background.jpg)">
-    <nav
-      class="navbar navbar-expand-lg navbar-light d-flex align-items-center bg-transparent mt-2"
-    >
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa fa-bars text-light"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light text-capitalize"
-                style="font-size: 18px"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                buy crypto
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" style="font-size: 18px" href="#"
-                >Markets</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light"
-                style="font-size: 18px"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Trade
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light"
-                style="font-size: 18px"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Derivatives
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light"
-                style="font-size: 18px"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Earn
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
+<body style="background-image: url(./assets/background.jpg)">
+  <!-- navbar start  -->
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light"
-                style="font-size: 18px"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex align-items-center gap-2">
-            <input
-              class="form-control me-2 rounded-pill search-bar"
-              style="width: 230px; height: 40px"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <a class="navbar-brand" href="#"
-              ><img
-                style="width: 50px; height: 50px"
-                class="rounded-circle nav-logo"
-                src="./assets/logo.png"
-                alt=""
-            /></a>
-            <i
-              style="width: 25px; height: 25px"
-              class="fa-regular fa-bell fs-4 text-light"
-            ></i>
-          </form>
-        </div>
-        <button
-          class="btn btn-outline-success nav-btn rounded-pill text-light"
-          type="submit"
-        >
-          Add funds
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light d-flex align-items-center bg-transparent mt-2">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars text-light"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light text-capitalize" style="font-size: 18px" href="#"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              buy crypto
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" style="font-size: 18px" href="#">Markets</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" style="font-size: 18px" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Trade
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" style="font-size: 18px" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Derivatives
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" style="font-size: 18px" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Earn
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" style="font-size: 18px" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex align-items-center gap-2">
+          <input class="form-control me-2 rounded-pill search-bar" style="width: 230px; height: 40px" type="search"
+            placeholder="Search" aria-label="Search" />
+          <a class="navbar-brand" href="#"><img style="width: 50px; height: 50px" class="rounded-circle nav-logo"
+              src="./assets/logo.png" alt="" /></a>
+          <i style="width: 25px; height: 25px" class="fa-regular fa-bell fs-4 text-light"></i>
+        </form>
       </div>
-    </nav>
+      <button class="btn btn-outline-success nav-btn rounded-pill text-light" type="submit">
+        Add funds
+      </button>
+    </div>
+  </nav>
+  <!-- navbar end  -->
 
-    <!-- Hero section start -->
-    <section class="bg-main bg-color hero-section" style="margin-top: 80px">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-12 col-lg-7 mt-3">
-            <h1 class="text-light" style="font-size: 80px; line-height: 1.1">
-              Get Crypto now <br />
-              Instant purchase available
-            </h1>
-            <p
-              style="color: #d2d2d2; font-size: 30px; line-height: 1.1"
-              class="mt-3"
-            >
-              Buy Bitcoin and 7+ Cryptos on KuCoin Using <br />
-              credit card, Bank Transfer and more.
-            </p>
+  <!-- Hero section start -->
+  <section class="bg-main bg-color hero-section" style="margin-top: 80px">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-7 mt-3">
+          <h1 class="text-light" style="font-size: 80px; line-height: 1.1">
+            Get Crypto now <br />
+            Instant purchase available
+          </h1>
+          <p style="color: #d2d2d2; font-size: 30px; line-height: 1.1" class="mt-3">
+            Buy Bitcoin and 7+ Cryptos on KuCoin Using <br />
+            credit card, Bank Transfer and more.
+          </p>
 
-            <div class="mt-5">
-              <p style="color: #d2d2d2">Accept Payment Method:</p>
-              <div class="row">
-                <div class="col-2 hero-icon">
-                  <img src="./assets/image-ico1.png" alt="" />
-                </div>
-                <div class="col-2 hero-icon">
-                  <img src="./assets/image-ico2.png" alt="" />
-                </div>
-                <div class="col-2 hero-icon">
-                  <img src="./assets/image-ico3.png" alt="" />
-                </div>
-                <div class="col-2 hero-icon">
-                  <img src="./assets/image-ico4.png" alt="" />
-                </div>
-                <div class="col-2 hero-icon">
-                  <img src="./assets/image-ico5.png" alt="" />
-                </div>
+          <div class="mt-5">
+            <p style="color: #d2d2d2">Accept Payment Method:</p>
+            <div class="row">
+              <div class="col-2 hero-icon">
+                <img src="./assets/image-ico1.png" alt="" />
+              </div>
+              <div class="col-2 hero-icon">
+                <img src="./assets/image-ico2.png" alt="" />
+              </div>
+              <div class="col-2 hero-icon">
+                <img src="./assets/image-ico3.png" alt="" />
+              </div>
+              <div class="col-2 hero-icon">
+                <img src="./assets/image-ico4.png" alt="" />
+              </div>
+              <div class="col-2 hero-icon">
+                <img src="./assets/image-ico5.png" alt="" />
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="mt-5 col-12 col-md-12 col-lg-5">
-            <div
-              class="card card-custom"
-              style="background-color: #1d3536; border-radius: 10px"
-            >
-              <div class="card-body">
-                <div>
-                  <ul
-                    class="nav nav-pills mb-3 d-flex justify-content-between"
-                    id="pills-tab"
-                    role="tablist"
-                  >
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active px-5 rounded-pill text-light"
-                        style="width: 150px; height: 59px; font-size: 22px;"
-                        id="pills-home-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-home"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-home"
-                        aria-selected="true"
-                      >
-                        Buy
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link px-5 rounded-pill text-light"
-                        style="width: 150px; height: 59px; font-size: 22px;"
-                        id="pills-profile-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-profile"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-profile"
-                        aria-selected="false"
-                      >
-                        Sell
-                      </button>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="pills-tabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="pills-home"
-                      role="tabpanel"
-                      aria-labelledby="pills-home-tab"
-                    >
+        <div class="mt-5 col-12 col-md-12 col-lg-5">
+          <div class="card card-custom" style="background-color: #1d3536; border-radius: 10px">
+            <div class="card-body">
+              <div>
+                <ul class="nav nav-pills mb-3 d-flex justify-content-between" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active px-5 rounded-pill text-light"
+                      style="width: 150px; height: 59px; font-size: 22px;" id="pills-home-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                      aria-selected="true">
+                      Buy
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link px-5 rounded-pill text-light"
+                      style="width: 150px; height: 59px; font-size: 22px;" id="pills-profile-tab" data-bs-toggle="pill"
+                      data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                      aria-selected="false">
+                      Sell
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
+                    <div>
                       <div>
-                        <div>
-                          <p
-                            class="mb-0 mt-4"
-                            style="color: #d2d2d2; font-size: 15px"
-                          >
-                            I want to spent
-                          </p>
-                          <div
-                            class="d-flex justify-content-between small-boxes text align-items-center p-4"
-                          >
-                            <span style="font-size: 20px; color: #D2D2D2;"
-                              >Limit: 10 - 5000</span
-                            >
-                            <div class="dropdown">
-                              <a
-                                class="dropdown-toggle text-decoration-none text-light"
-                                style="cursor: pointer; font-size: 20px;"
-                                data-bs-toggle="dropdown"
-                              >
-                                <img
-                                  style="width: 30%;padding-right: 3px;"
-                                  src="./assets/Us Dollar Circled.png"
-                                  alt=""
-                                />USD
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#">Normal</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Active</a>
-                                </li>
-                              </ul>
-                            </div>
+                        <p class="mb-0 mt-4" style="color: #d2d2d2; font-size: 15px">
+                          I want to spent
+                        </p>
+                        <div class="d-flex justify-content-between small-boxes text align-items-center p-4">
+                          <span style="font-size: 20px; color: #D2D2D2;">Limit: 10 - 5000</span>
+                          <div class="dropdown">
+                            <a class="dropdown-toggle text-decoration-none text-light"
+                              style="cursor: pointer; font-size: 20px;" data-bs-toggle="dropdown">
+                              <img style="width: 30%;padding-right: 3px;" src="./assets/Us Dollar Circled.png"
+                                alt="" />USD
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Normal</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Active</a>
+                              </li>
+                            </ul>
                           </div>
                         </div>
+                      </div>
 
-                        <div>
-                          <p
-                            class="mb-0 mt-4"
-                            style="color: #d2d2d2; font-size: 15px"
-                          >
-                            I will receive
-                          </p>
-                          <div
-                            class="d-flex justify-content-between small-boxes text align-items-center p-4"
-                          >
-                            <span style="font-size: 20px;color: #D2D2D2;"
-                              >Limit: 9.52 - 4,761.9</span
-                            >
-                            <div class="dropdown">
-                              <a
-                                class="dropdown-toggle text-decoration-none text-light"
-                                style="cursor: pointer; font-size: 20px"
-                                data-bs-toggle="dropdown"
-                              >
-                                <img
-                                style="width: 30%;padding-right: 3px;"
-                                  src="./assets/Us Dollar Circled (1).png"
-                                  alt=""
-                                />USDT
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#">Normal</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Active</a>
-                                </li>
-                              </ul>
-                            </div>
+                      <div>
+                        <p class="mb-0 mt-4" style="color: #d2d2d2; font-size: 15px">
+                          I will receive
+                        </p>
+                        <div class="d-flex justify-content-between small-boxes text align-items-center p-4">
+                          <span style="font-size: 20px;color: #D2D2D2;">Limit: 9.52 - 4,761.9</span>
+                          <div class="dropdown">
+                            <a class="dropdown-toggle text-decoration-none text-light"
+                              style="cursor: pointer; font-size: 20px" data-bs-toggle="dropdown">
+                              <img style="width: 30%;padding-right: 3px;" src="./assets/Us Dollar Circled (1).png"
+                                alt="" />USDT
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Normal</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Active</a>
+                              </li>
+                            </ul>
                           </div>
                         </div>
+                      </div>
 
-                        <div>
-                          <p
-                            class="mb-0 mt-4"
-                            style="color: #d2d2d2; font-size: 15px"
-                          >
-                            Pay with
-                          </p>
-                          <div
-                            class="d-flex justify-content-between small-boxes text align-items-center p-4"
-                          >
-                            <span style="font-size: 20px; color: #D2D2D2;"
-                              >Visa/Master Card</span
-                            >
-                            <div class="dropdown">
-                              <a
-                                class="dropdown-toggle text-decoration-none text-light"
-                                style="cursor: pointer; font-size: 20px"
-                                data-bs-toggle="dropdown"
-                              >
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#">Normal</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Active</a>
-                                </li>
-                              </ul>
-                            </div>
+                      <div>
+                        <p class="mb-0 mt-4" style="color: #d2d2d2; font-size: 15px">
+                          Pay with
+                        </p>
+                        <div class="d-flex justify-content-between small-boxes text align-items-center p-4">
+                          <span style="font-size: 20px; color: #D2D2D2;">Visa/Master Card</span>
+                          <div class="dropdown">
+                            <a class="dropdown-toggle text-decoration-none text-light"
+                              style="cursor: pointer; font-size: 20px" data-bs-toggle="dropdown">
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Normal</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Active</a>
+                              </li>
+                            </ul>
                           </div>
                         </div>
+                      </div>
 
-                        <div
-                          class="d-flex justify-content-between mt-4"
-                          style="font-size: 10px; color: #d2d2d2"
-                        >
-                          <p class="mb-1" style="font-size: 15px;">Reference Price</p>
-                          <p class="mb-1" style="font-size: 15px;">1 USDT = 1.5 USD</p>
-                        </div>
-                        <a
-                          href="#"
-                          class="btn w-100 p-3"
-                          style="
+                      <div class="d-flex justify-content-between mt-4" style="font-size: 10px; color: #d2d2d2">
+                        <p class="mb-1" style="font-size: 15px;">Reference Price</p>
+                        <p class="mb-1" style="font-size: 15px;">1 USDT = 1.5 USD</p>
+                      </div>
+                      <a href="#" class="btn w-100 p-3" style="
                             border-radius: 10px;
                             background-color: #00b483;
                             font-size: 20px;
                             font-weight: 500;
-                          "
-                          >Buy USDT</a
-                        >
-                      </div>
+                          ">Buy USDT</a>
                     </div>
-                    <div
-                      class="tab-pane fade"
-                      id="pills-profile"
-                      role="tabpanel"
-                      aria-labelledby="pills-profile-tab"
-                    >
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div>
                       <div>
-                        <p
-                          class="mb-0 mt-4"
-                          style="color: #d2d2d2; font-size: 15px"
-                        >
+                        <p class="mb-0 mt-4" style="color: #d2d2d2; font-size: 15px">
                           I want to spent
                         </p>
-                        <div
-                          class="d-flex justify-content-between small-boxes text align-items-center p-4"
-                        >
-                          <span style="font-size: 20px; color: #D2D2D2;"
-                            >Limit: 10 - 5000</span
-                          >
+                        <div class="d-flex justify-content-between small-boxes text align-items-center p-4">
+                          <span style="font-size: 20px; color: #D2D2D2;">Limit: 10 - 5000</span>
                           <div class="dropdown">
-                            <a
-                              class="dropdown-toggle text-decoration-none text-light"
-                              style="cursor: pointer; font-size: 20px;"
-                              data-bs-toggle="dropdown"
-                            >
-                              <img
-                                style="width: 30%;padding-right: 3px;"
-                                src="./assets/Us Dollar Circled.png"
-                                alt=""
-                              />USD
+                            <a class="dropdown-toggle text-decoration-none text-light"
+                              style="cursor: pointer; font-size: 20px;" data-bs-toggle="dropdown">
+                              <img style="width: 30%;padding-right: 3px;" src="./assets/Us Dollar Circled.png"
+                                alt="" />USD
                             </a>
                             <ul class="dropdown-menu">
                               <li>
@@ -442,29 +297,16 @@
                       </div>
 
                       <div>
-                        <p
-                          class="mb-0 mt-4"
-                          style="color: #d2d2d2; font-size: 15px"
-                        >
+                        <p class="mb-0 mt-4" style="color: #d2d2d2; font-size: 15px">
                           I will receive
                         </p>
-                        <div
-                          class="d-flex justify-content-between small-boxes text align-items-center p-4"
-                        >
-                          <span style="font-size: 20px;color: #D2D2D2;"
-                            >Limit: 9.52 - 4,761.9</span
-                          >
+                        <div class="d-flex justify-content-between small-boxes text align-items-center p-4">
+                          <span style="font-size: 20px;color: #D2D2D2;">Limit: 9.52 - 4,761.9</span>
                           <div class="dropdown">
-                            <a
-                              class="dropdown-toggle text-decoration-none text-light"
-                              style="cursor: pointer; font-size: 20px"
-                              data-bs-toggle="dropdown"
-                            >
-                              <img
-                              style="width: 30%;padding-right: 3px;"
-                                src="./assets/Us Dollar Circled (1).png"
-                                alt=""
-                              />USDT
+                            <a class="dropdown-toggle text-decoration-none text-light"
+                              style="cursor: pointer; font-size: 20px" data-bs-toggle="dropdown">
+                              <img style="width: 30%;padding-right: 3px;" src="./assets/Us Dollar Circled (1).png"
+                                alt="" />USDT
                             </a>
                             <ul class="dropdown-menu">
                               <li>
@@ -479,24 +321,14 @@
                       </div>
 
                       <div>
-                        <p
-                          class="mb-0 mt-4"
-                          style="color: #d2d2d2; font-size: 15px"
-                        >
+                        <p class="mb-0 mt-4" style="color: #d2d2d2; font-size: 15px">
                           Pay with
                         </p>
-                        <div
-                          class="d-flex justify-content-between small-boxes text align-items-center p-4"
-                        >
-                          <span style="font-size: 20px; color: #D2D2D2;"
-                            >Visa/Master Card</span
-                          >
+                        <div class="d-flex justify-content-between small-boxes text align-items-center p-4">
+                          <span style="font-size: 20px; color: #D2D2D2;">Visa/Master Card</span>
                           <div class="dropdown">
-                            <a
-                              class="dropdown-toggle text-decoration-none text-light"
-                              style="cursor: pointer; font-size: 20px"
-                              data-bs-toggle="dropdown"
-                            >
+                            <a class="dropdown-toggle text-decoration-none text-light"
+                              style="cursor: pointer; font-size: 20px" data-bs-toggle="dropdown">
                             </a>
                             <ul class="dropdown-menu">
                               <li>
@@ -510,24 +342,16 @@
                         </div>
                       </div>
 
-                      <div
-                        class="d-flex justify-content-between mt-4"
-                        style="font-size: 10px; color: #d2d2d2"
-                      >
+                      <div class="d-flex justify-content-between mt-4" style="font-size: 10px; color: #d2d2d2">
                         <p class="mb-1" style="font-size: 15px;">Reference Price</p>
                         <p class="mb-1" style="font-size: 15px;">1 USDT = 1.5 USD</p>
                       </div>
-                      <a
-                        href="#"
-                        class="btn w-100 p-3"
-                        style="
+                      <a href="#" class="btn w-100 p-3" style="
                           border-radius: 10px;
                           background-color: #00b483;
                           font-size: 20px;
                           font-weight: 500;
-                        "
-                        >Sell USDT</a
-                      >
+                        ">Sell USDT</a>
                     </div>
                   </div>
                 </div>
@@ -536,214 +360,258 @@
           </div>
         </div>
       </div>
-    </section>
+  </section>
 
-    <!-- Hero section end -->
+  <!-- Hero section end -->
 
-    <!-- purchase section start -->
+  <!-- purchase section start -->
 
-    <section class="bg-main bg-color hero-section" style="margin-top: 130px">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-12 col-lg-6">
-            <img class="w-75" src="./assets/phone.png" alt="" />
-          </div>
-          <div class="col-12 col-md-12 col-lg-6">
-            <p style="font-size: 64px; line-height: 1.1" class="text-light">
-              Purchase Crypto in Easy Steps
+  <section class="bg-main bg-color hero-section" style="margin-top: 130px">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-6">
+          <img class="w-75" src="./assets/phone.png" alt="" />
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <p style="font-size: 64px; line-height: 1.1" class="text-light">
+            Purchase Crypto in Easy Steps
+          </p>
+
+          <div style="border-left: 1px solid green; padding-left: 15px">
+            <p style="font-size: 20px; color: #d2d2d2">
+              Create a KuCoin Account
             </p>
-
-            <div style="border-left: 1px solid green; padding-left: 15px">
-              <p style="font-size: 20px; color: #d2d2d2">
-                Create a KuCoin Account
-              </p>
-              <p style="color: #d2d2d2; font-size: 18px">Verify Your Account</p>
-              <p class="text-light" style="font-size: 16px">
-                Add a Payment Method
-              </p>
-              <p style="font-size: 12px" class="text-light">
-                Add your credit card, debit card, or other payment methods to
-                buy <br />cryptocurrency, KuCoin support over 70 payment
-                methods.
-              </p>
-              <p style="color: #d2d2d2; font-size: 18px">Buy Cryptocurrency</p>
-            </div>
-            <p style="color: #d2d2d2; font-size: 15px">
-              Easily purchased crypto KuCoin with this straight forward <br />
-              guide for hassle free transaction.
+            <p style="color: #d2d2d2; font-size: 18px">Verify Your Account</p>
+            <p class="text-light" style="font-size: 16px">
+              Add a Payment Method
             </p>
+            <p style="font-size: 12px" class="text-light">
+              Add your credit card, debit card, or other payment methods to
+              buy <br />cryptocurrency, KuCoin support over 70 payment
+              methods.
+            </p>
+            <p style="color: #d2d2d2; font-size: 18px">Buy Cryptocurrency</p>
           </div>
+          <p style="color: #d2d2d2; font-size: 15px">
+            Easily purchased crypto KuCoin with this straight forward <br />
+            guide for hassle free transaction.
+          </p>
         </div>
       </div>
-    </section>
-
-    <!-- purchase section end -->
-
-    <!-- Premier section start -->
-      <div class="container premier-section ">
-        <div class="row">
-          <div class="col-12 col-md-12 col-lg-12">
-            <p style="font-size: 64px; line-height: 1.1" class="text-light">
-              The Premier Platform for <br />Crypto Purchases
-            </p>
-            <p style="font-size: 22px; color: #d2d2d2">
-              KuCoin the premier Platform, ensures secure and convenient crypto
-              <br />
-              purchases with a diverse range of cryptocurrencies
-            </p>
-          </div>
-
-          <div class="col-12 col-md-12 col-lg-6 "style="border-left: 1px solid green" >
-            <div class="col-12 col-md-12 col-lg-12" style=" padding-bottom:30px;">
-              <img style="width: 13%;" src="./assets/secure.png" alt="">
-              <p class="text-light fs-4">Trustworthy and Secure</p>
-              <p style="color: #D2D2D2;">Place your trust in KuCoin for your <br>cryptocurrency holdings. We’re a reliable trading <br>platform that regularly validates the safety of <br> your funds through <u> Proof of reserve (PoR).</u></p>
-            </div>
-            <div class="col-12 col-md-12 col-lg-12" style=" padding-bottom:30px;">
-              <img style="width: 13%;" src="./assets/transtion.png" alt="">
-              <p class="text-light fs-4">Swift Transaction</p>
-              <p style="color: #D2D2D2;">Place your trust in KuCoin for your <br>cryptocurrency holdings. We’re a reliable trading <br>platform that regularly validates the safety of <br> your funds through <u>Proof of reserve (PoR).</u></p>
-            </div>
-          </div>
-          <div class="col-12 col-md-12 col-lg-6" style="margin-top: 80px;border-left: 1px solid green ">
-            <div class="col-12 col-md-12 col-lg-12" style="padding-bottom:30px;">
-              <img style="width: 13%;" src="./assets/money.png" alt="">
-              <p class="text-light fs-4">Versatile Payments</p>
-              <p style="color: #D2D2D2;">Buy crypto using your debit and credit cards,<br> bank transfer, and over 70 other payment <br> methods tailored to suit your individual needs.</p>
-            </div>
-            <div class="col-12 col-md-12 col-lg-12" style="padding-bottom:30px;">
-              <img style="width: 13%;" src="./assets/price-tag.png" alt="">
-              <p class="text-light fs-4">Trustworthy and Secure</p>
-              <p style="color: #D2D2D2;">Buy crypto using your debit and credit cards,<br> bank transfer, and over 70 other payment <br> methods tailored to suit your individual needs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- Premier section end -->
-
-
-    <!-- img section start-->
-
-
-    <section class="img-section">
-      <div class="container">
-        <div class="row text-center gap-4">
-          <p class="text-light">Top Cryptocurrencies Available on KuCoin</p>
-          <img src="./assets/Rectangle 14.png" alt="">
-        </div>
-        </div>
-        </section>
-    <!-- img section end-->
-
-    <!-- global crypto section start -->
-
-<div class="container" style="margin-top: 10%;">
-  <div class="row">
-    <div class="col-12 col-md-12 col-lg-6 global-sec-upper-left">
-      <a class="text-light text-uppercase global-sec-btn rounded-pill ">global crybpto trading hub</a>
-      <p class="text-light" style="font-size: 64px; line-height: 1.1; margin-top: 30px;">Trade Crypto on KuCoin Worldwide</p>
-      <p class="fs-4" style="color: #D2D2D2;line-height: 1.1;">Trade Crypto on Kucoin gateway to global markets, with wide range of digital assets and advanced trading features, KuCoin offers a seamless and secure platform for traders worldwide to buy, sell and manage their crypto assets.</p>
     </div>
-    <div class="col-12 col-md-12 col-lg-6">
-      <img class="global-sec-img" src="./assets/website.png" alt="">
+  </section>
+
+  <!-- purchase section end -->
+
+  <!-- Premier section start -->
+  <div class="container premier-section ">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-12">
+        <p style="font-size: 64px; line-height: 1.1" class="text-light">
+          The Premier Platform for <br />Crypto Purchases
+        </p>
+        <p style="font-size: 22px; color: #d2d2d2">
+          KuCoin the premier Platform, ensures secure and convenient crypto
+          <br />
+          purchases with a diverse range of cryptocurrencies
+        </p>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-6 " style="border-left: 1px solid green">
+        <div class="col-12 col-md-12 col-lg-12" style=" padding-bottom:30px;">
+          <img style="width: 13%;" src="./assets/secure.png" alt="">
+          <p class="text-light fs-4">Trustworthy and Secure</p>
+          <p style="color: #D2D2D2;">Place your trust in KuCoin for your <br>cryptocurrency holdings. We’re a reliable
+            trading <br>platform that regularly validates the safety of <br> your funds through <u> Proof of reserve
+              (PoR).</u></p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12" style=" padding-bottom:30px;">
+          <img style="width: 13%;" src="./assets/transtion.png" alt="">
+          <p class="text-light fs-4">Swift Transaction</p>
+          <p style="color: #D2D2D2;">Place your trust in KuCoin for your <br>cryptocurrency holdings. We’re a reliable
+            trading <br>platform that regularly validates the safety of <br> your funds through <u>Proof of reserve
+              (PoR).</u></p>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-6" style="margin-top: 80px;border-left: 1px solid green ">
+        <div class="col-12 col-md-12 col-lg-12" style="padding-bottom:30px;">
+          <img style="width: 13%;" src="./assets/money.png" alt="">
+          <p class="text-light fs-4">Versatile Payments</p>
+          <p style="color: #D2D2D2;">Buy crypto using your debit and credit cards,<br> bank transfer, and over 70 other
+            payment <br> methods tailored to suit your individual needs.</p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12" style="padding-bottom:30px;">
+          <img style="width: 13%;" src="./assets/price-tag.png" alt="">
+          <p class="text-light fs-4">Trustworthy and Secure</p>
+          <p style="color: #D2D2D2;">Buy crypto using your debit and credit cards,<br> bank transfer, and over 70 other
+            payment <br> methods tailored to suit your individual needs.</p>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- Premier section end -->
 
-  <div class="row">
+
+  <!-- img section start-->
+
+
+  <section class="img-section">
+    <div class="container">
+      <div class="row text-center gap-4">
+        <p class="text-light">Top Cryptocurrencies Available on KuCoin</p>
+        <img src="./assets/Rectangle 14.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- img section end-->
+
+  <!-- global crypto section start -->
+
+  <div class="container" style="margin-top: 10%;">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-6 global-sec-upper-left">
+        <a class="text-light text-uppercase global-sec-btn rounded-pill ">global crybpto trading hub</a>
+        <p class="text-light" style="font-size: 64px; line-height: 1.1; margin-top: 30px;">Trade Crypto on KuCoin
+          Worldwide</p>
+        <p class="fs-4" style="color: #D2D2D2;line-height: 1.1;">Trade Crypto on Kucoin gateway to global markets, with
+          wide range of digital assets and advanced trading features, KuCoin offers a seamless and secure platform for
+          traders worldwide to buy, sell and manage their crypto assets.</p>
+      </div>
+      <div class="col-12 col-md-12 col-lg-6">
+        <img class="global-sec-img" src="./assets/website.png" alt="">
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-12 col-md-12 col-lg-3 global-sec-lower-box">
         <img src="./assets/debit.png" alt="">
-        <p class="text-light">Buy Crypto with a  Credit or <br>  Debit Card</p>
-        <span>KuCoin let you buy cryptocurrency <br> using your debit or credit card. <br>Select the desire cryptocurrency <br>enter the amount, and then input <br>your visa or Mastercard...</span>
+        <p class="text-light">Buy Crypto with a Credit or <br> Debit Card</p>
+        <span>KuCoin let you buy cryptocurrency <br> using your debit or credit card. <br>Select the desire
+          cryptocurrency <br>enter the amount, and then input <br>your visa or Mastercard...</span>
       </div>
 
       <div class="col-12 col-md-12 col-lg-3 global-sec-lower-box">
         <img src="./assets/fund.png" alt="">
         <p class="text-light">Buy Crypto Via Bank <br> Deposit</p>
-        <span>KuCoin let you buy cryptocurrency <br>using your debit or credit card. <br>Select the desire cryptocurrency <br> enter the amount, and then input <br>your visa or Mastercard...</span>
+        <span>KuCoin let you buy cryptocurrency <br>using your debit or credit card. <br>Select the desire
+          cryptocurrency <br> enter the amount, and then input <br>your visa or Mastercard...</span>
       </div>
 
       <div class="col-12  col-md-12 col-lg-3 global-sec-lower-box">
         <img src="./assets/pie.png" alt="">
         <p class="text-light">Expand Your Crypto <br> Portfolio</p>
-        <span>Don’t just buy cryptocurrency on <br>KuCoin, put it to work too. KuCoin <br>empowers you to generate passive <br>income through lending, staking <br>and more with <u>KuCoin earn.</u></span>
+        <span>Don’t just buy cryptocurrency on <br>KuCoin, put it to work too. KuCoin <br>empowers you to generate
+          passive <br>income through lending, staking <br>and more with <u>KuCoin earn.</u></span>
       </div>
- 
+
       <div class="col-12 col-md-12 col-lg-3 global-sec-lower-box">
         <img src="./assets/kucoin.png" alt="">
         <p class="text-light">Buy Cryptocurrency on the <br> KuCoin Spot Market</p>
-        <span>Head to the KuCoin Spot Market to <br>trade and purchase cryptocurrency. <br>Fund your credit account with bas <br>currencies like USDT via Fast Trade <br>or the P2P market.</span>
+        <span>Head to the KuCoin Spot Market to <br>trade and purchase cryptocurrency. <br>Fund your credit account with
+          bas <br>currencies like USDT via Fast Trade <br>or the P2P market.</span>
       </div>
+    </div>
   </div>
-</div>
 
-    <!-- global crypto section end-->
+  <!-- global crypto section end-->
 
 
-    <!-- Question section start -->
+  <!-- Question section start -->
 
-    <div class="container question-section">
-<div class="col-12 text-center question-sec-upper">
-  <p>Frequently Asked Question</p>
-  <span>The key to creating an effective FAQ page is to anticipate the questions to customer or <br> users may have and provide clear and concise answers.</span>
-</div>
+  <div class="container question-section">
+    <div class="col-12 text-center question-sec-upper">
+      <p>Frequently Asked Question</p>
+      <span>The key to creating an effective FAQ page is to anticipate the questions to customer or <br> users may have
+        and provide clear and concise answers.</span>
+    </div>
     <div class="accordion" id="accordionExample">
       <div class="accordion-item mb-3 border-0">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button fs-4 p-4 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <button class="accordion-button fs-4 p-4 " type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             Where can I buy Cryptocurrency?
-                    </button>
+          </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
           <div class="accordion-body question-item">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
         </div>
       </div>
       <div class="accordion-item mb-3 border-0">
         <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed question-item fs-4 p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <button class="accordion-button collapsed question-item fs-4 p-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             How do I use a bank card to purchase cryptocurrency?
-                    </button>
+          </button>
         </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
           <div class="accordion-body  question-item">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
         </div>
       </div>
       <div class="accordion-item mb-3 border-0">
         <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed question-item fs-4 p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <button class="accordion-button collapsed question-item fs-4 p-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             Which cryptocurrency should I buy today?
           </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
           <div class="accordion-body question-item">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
         </div>
-      </div> 
+      </div>
       <div class="accordion-item mb-3 border-0">
         <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed question-item fs-4 p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <button class="accordion-button collapsed question-item fs-4 p-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
             Which bank cards are supported by KuCoin for cryptocurrency purchase?
           </button>
         </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
           <div class="accordion-body question-item">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
         </div>
       </div>
       <div class="accordion-item mb-3 border-0">
         <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed question-item fs-4 p-4 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <button class="accordion-button collapsed question-item fs-4 p-4 " type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
             Are there deposit limit on KuCoin?
           </button>
         </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample">
           <div class="accordion-body question-item">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
           </div>
         </div>
       </div>
@@ -751,15 +619,58 @@
   </div>
 
 
-    <!-- Question section end -->
+  <!-- Question section end -->
 
 
 
+  <!-- Footer start -->
+  <footer class=" footer-section">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-6 col-md-12 col-lg-4 text-light fs-2">
+          <p>FAQ/Careers</p>
+        </div>
+        <div class="col-6 col-md-12 col-lg-4 text-light fs-4">
+          <p>Crypto Prices</p>
+          <p>Learn</p>
+          <p>Developer</p>
+          <p>App Downloader</p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 footer-icons ">
+          <i class="fa-brands fa-facebook-f rounded-circle"></i>
+          <i class="fa-brands fa-instagram rounded-circle"></i>
+          <i class="fa-brands fa-tiktok rounded-circle"></i>
+          <i class="fa-brands fa-whatsapp rounded-circle"></i>
+          <i class="fa-brands fa-youtube rounded-circle"></i>
+        </div>
+      </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="col-12 col-md-12 col-lg-12">
+        <div class="col-12 col-md-12 col-lg-7 lower-section">
+          <div
+            class="col-12 col-md-12 col-lg-8 text-light d-flex justify-content-between align-items-center p-4 rounded-3"
+            style="background-color: rgba(255, 255, 255, 0.05);">
+            <span class=" fs-5">Sign Up for newsletter</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4 text-light fs-6">
+            <p>BitCoin (BTC) Price</p>
+            <p>Ethereum (ETH) Price</p>
+            <p>Ripple (XRP) Price</p>
+            <p>More Prices</p>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 text-light fs-2"></div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
