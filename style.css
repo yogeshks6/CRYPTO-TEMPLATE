@@ -73,6 +73,39 @@ body {
   color: #d2d2d2;
   font-size: 16px;
 }
+.question-section{
+  margin-top: 10%;
+}
+.question-sec-upper  {
+  margin-bottom: 5%;
+}
+.question-sec-upper p {
+  color: white;
+  font-size: 55px;
+}
+.question-sec-upper span {
+  font-size: 20px;
+  color: #d2d2d2;
+}
+.question-item {
+  color: white;
+  background-color: rgb(26, 35, 42);
+}
+.accordion-item:first-of-type .accordion-button {
+  color: white;
+  background-color: rgb(26, 35, 42);
+}
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: rgb(26, 35, 42);
+}
+
+.accordion-button::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="%23ffffff" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>');
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="%23ffffff" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>');
+}
 
 @media only screen and (max-width: 576px) {
   .global-sec-lower-box {
