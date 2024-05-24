@@ -34,9 +34,8 @@ body {
 .card-body .nav .nav-item .active {
   background-color: #00b483;
 }
-.premier-sec {
-  margin-top: 70px;
-  margin-left: 20%;
+.premier-section {
+  margin-top: 10%;
 }
 
 .img-section {
