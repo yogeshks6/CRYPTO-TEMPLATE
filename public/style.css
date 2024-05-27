@@ -48,7 +48,23 @@ body {
 .img-section {
   margin-top: 6%;
 }
+.icon-box-img-pre img{
 
+  width: 70px;
+}
+.icon-box-img-pre{
+  position: relative;
+}
+
+.icon-box-img-pre::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 180, 131, 1);
+  width: 3px;
+  height: 66px;
+  left: -14px;
+  z-index: 9999;
+}
 .global-sec-btn {
   border: 1px solid #00b483;
   border-bottom: none;
@@ -70,7 +86,6 @@ body {
   margin-top: 20px;
   height: 100%;
   border-left: 1px solid rgba(0, 180, 131, 0.25);
-
   padding-top: 13%;
 }
 
