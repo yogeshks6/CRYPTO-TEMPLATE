@@ -69,13 +69,28 @@ body {
 .global-sec-lower-box {
   margin-top: 20px;
   height: 100%;
-  border-left: 1px solid green;
-  padding-left: 15px;
+  border-left: 1px solid rgba(0, 180, 131, 0.25);
+
+  padding-top: 13%;
 }
 
-.global-sec-lower-box img {
-  margin-top: 40%;
+.icon-box-img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+
 }
+
+.icon-box-img::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 180, 131, 1);
+  width: 3px;
+  height: 53px;
+  left: -14px;
+  z-index: 9999;
+}
+
 
 .global-sec-lower-box p {
   font-size: 20px;
@@ -142,24 +157,26 @@ body {
   border-radius: 100%;
 }
 
-.footer-box{
+.footer-box {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #D2D2D2;
 }
-.footer-play-link{
+
+.footer-play-link {
   color: #D2D2D2;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 @media only screen and (max-width: 576px) {
 
   .global-sec-lower-box img {
     margin-top: 20%;
   }
 
-  .footer-play-link{
-  border: none; 
+  .footer-play-link {
+    border: none;
   }
 }
